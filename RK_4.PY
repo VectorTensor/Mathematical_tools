@@ -1,4 +1,4 @@
-# Solution of first order differential equation using RK-4 method S
+# Solution of first order differential equation using RK-4 method.
 import math
 import matplotlib.pyplot as plt
 #function dy/dx=f(x,y)
