@@ -1,3 +1,4 @@
+# program to plot graphs
 import math
 import matplotlib.pyplot as plt
 # define the funtion 

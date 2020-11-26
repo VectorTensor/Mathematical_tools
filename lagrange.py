@@ -1,8 +1,11 @@
+#interpolating a function using lagrange formula
 import numpy as np
 import matplotlib.pyplot as plt
-
+#data sets given 
 x1=[5,7,11,13,17]
 y=[150,392,1452,2366,5202]
+
+#Lagrange function
 def fun(x):
     fun=0
     
@@ -22,11 +25,22 @@ def fun(x):
 a=[5]
 b=[fun(5)]
 print(b[0])
+
+#Creating more data points to plot 
 for i in range(1,500):
     a.append(a[i-1]+0.01)
     b.append(fun(a[i]))
 
+# Inorder to get the data for specific values just use fun(<ENTER THE VALUE YOU WANT>)
+
+
+
+#matplotlib settings 
 plt.plot(a,b)
+plt.xlabel('x')
+plt.ylabel('f(x)')
+plt.grid('both')
+plt.title('Interpolation of the function')
 plt.show()
 
 
